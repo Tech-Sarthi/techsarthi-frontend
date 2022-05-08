@@ -1,0 +1,88 @@
+
+.heade {
+  position: absolute;
+  top: 0;
+  display: flex;
+//   row-gap: 10px;
+  justify-content: space-between;
+  padding: 2rem 2vw;
+  transition: 0.5s ease;
+  z-index: 100;
+  left: 0;
+  right: 0;
+  align-items: center;
+  @media (max-width: 900px) {
+    display: none;
+  }
+
+
+
+
+  span {
+    font-family: 'Heebo';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 20px;
+    text-align: center;
+    letter-spacing: 0.1px;
+    color: #FFFFFF;
+    text-transform: uppercase;
+    display: grid;
+    align-items: center;
+
+    .a {
+      color: #ffffff;
+
+    }
+  }
+
+  .nav_array {
+
+    ul {
+      list-style: none;
+      display: inline;
+      #home{
+          margin: 0rem;
+      }
+      li,
+      li:hover {
+        display: inline;
+        margin: 0 0 0 3.7rem;
+        font-size: 1rem;
+
+
+
+
+        a,
+        a:hover {
+
+          font-style: normal;
+          font-weight: bold;
+          line-height: normal;
+          font-size: 1em;
+          letter-spacing: 0.02em;
+          text-transform: uppercase;
+
+          color: rgba($color: #FFFFFF, $alpha: 0.7);
+
+
+
+
+
+        }
+
+        .active , .active:hover {
+          color: rgba($color: #FFFFFF, $alpha: 1);
+        }
+      }
+
+      li:hover {
+        a {
+          opacity: 1;
+          color: snow;
+        }
+      }
+    }
+  }
+}
