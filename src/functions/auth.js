@@ -1,5 +1,5 @@
 import axios from "axios";
-import {url_header} from "../const.js";
+import {url_header} from "../const";
 
 
 export const getCurrentUser=async(token)=>{

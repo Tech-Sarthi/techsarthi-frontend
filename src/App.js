@@ -7,6 +7,7 @@ import Header from "./components/nav/Header"
 import { ToastContainer } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 import CompleteRegistration from "./pages/auth/CompleteRegistration";
+import ResetPassword from "./pages/auth/ResetPassword";
 
 function App() {
   return (
@@ -29,6 +30,7 @@ function App() {
           <Route exact path="/login" element={<Login/>}/>
           <Route exact path="/register" element={<Register/>}/>
           <Route exact path="/register/complete" element={<CompleteRegistration/>}/>
+          <Route exact path="/forgot/password" element={<ResetPassword/>}/>
           {/* <Route path="*" element={<NotFound/>}/> */}
         </Routes>
     </Router>

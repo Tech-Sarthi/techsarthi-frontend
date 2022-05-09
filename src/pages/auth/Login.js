@@ -2,7 +2,6 @@ import React, { useState,useEffect } from "react"
 import {  signInWithEmailAndPassword } from "firebase/auth";
 import {auth} from "../../firebase";
 import { useNavigate } from "react-router-dom";
-import {createOrUpdateUser} from "../../functions/auth";
 import { Form, Input, Button } from 'antd';
 import { toast } from "react-toastify";
 import {Link} from "react-router-dom"
