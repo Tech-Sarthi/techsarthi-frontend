@@ -20,7 +20,7 @@ const Header=()=>{
                 </NavLink>
                 </li>
                 <li>
-                <NavLink id="tinkerNext" to="/team">
+                <NavLink id="team" to="/team">
                     OUR TEAM
                 </NavLink>
                 </li>
