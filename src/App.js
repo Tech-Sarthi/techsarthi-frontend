@@ -4,15 +4,31 @@ import Home from "./pages/home/Home";
 import Login from "./pages/auth/Login";
 import Register from "./pages/auth/Register";
 import Header from "./components/nav/Header"
+import { ToastContainer } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
+import CompleteRegistration from "./pages/auth/CompleteRegistration";
+
 function App() {
   return (
     <>
-      <Router>
+      <Router >
+      <ToastContainer
+      position="top-right"
+      autoClose={5000}
+      hideProgressBar={false}
+      newestOnTop={false}
+      closeOnClick
+      rtl={false}
+      pauseOnFocusLoss
+      draggable
+      pauseOnHover
+      />
         <Header />
         <Routes>
           <Route exact path="/" element={<Home/>}/>
           <Route exact path="/login" element={<Login/>}/>
           <Route exact path="/register" element={<Register/>}/>
+          <Route exact path="/register/complete" element={<CompleteRegistration/>}/>
           {/* <Route path="*" element={<NotFound/>}/> */}
         </Routes>
     </Router>
