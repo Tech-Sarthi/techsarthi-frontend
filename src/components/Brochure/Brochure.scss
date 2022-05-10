@@ -1,0 +1,124 @@
+.brochure_box {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 0px;
+
+    position: absolute;
+    width: 69.44vw;
+    height: 105px;
+    left: 15.28vw;
+    top: 1206px;
+
+}
+
+.brochure_heading {
+    position: static;
+    width: 8.05vw;
+    height: 37px;
+    left: 0px;
+    top: 0px;
+
+    font-family: 'Heebo';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 2vw;
+    line-height: 37px;
+    /* identical to box height, or 132% */
+
+    color: #6750A4;
+
+    /* Inside auto layout */
+
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+    margin: 24px 0px;
+}
+
+.download_box {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 12px 32px;
+
+    position: static;
+    width: 218px;
+    height: 44px;
+    left: calc(50% - 218px/2);
+    top: calc(50% - 44px/2);
+
+    border: 1px solid #6750A4;
+    border-radius: 4px;
+
+    /* Inside auto layout */
+
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+    margin: 0px 0px;
+}
+
+.download_frame {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    padding: 0px;
+    position: static;
+    width: 10.7vw;
+    height: 20px;
+    left: 44.65vw;
+    top: 12px;
+
+
+    /* Inside auto layout */
+
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+    margin: 0px 0px;
+}
+
+.download_text {
+    position: static;
+    left: 14.29%;
+    right: 0%;
+    top: 0%;
+    bottom: 0%;
+
+    font-family: 'Heebo';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 1.11vw;
+    line-height: 20px;
+    /* identical to box height, or 125% */
+
+    text-align: center;
+    letter-spacing: 0.1px;
+
+    color: #6750A4;
+
+
+    /* Inside auto layout */
+
+    flex: none;
+    order: 1;
+    flex-grow: 0;
+    margin: 0px 4px;
+}
+
+.download_icon {
+    position: static;
+    width: 18px;
+    height: 18px;
+    left: 0px;
+    top: 1px;
+
+
+    /* Inside auto layout */
+
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+    margin: 0px 4px;
+}

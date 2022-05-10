@@ -15,18 +15,23 @@ const Header=()=>{
                 </NavLink>
                 </li>
                 <li>
-                <NavLink id="project" to="/projects">
+                <NavLink id="about" to="/about">
                     WHAT WE DO
                 </NavLink>
                 </li>
+                <li id="projects">
+                <NavLink to="/projects"> FOR STUDENTS </NavLink>
+                </li>
                 <li>
+                <NavLink id="contact" to="/contact">
+                    CONTACT US
+                    </NavLink>
+                    
                 <NavLink id="team" to="/team">
                     OUR TEAM
                 </NavLink>
                 </li>
-                <li id="faq">
-                <NavLink to="/projects"> PROJECTS </NavLink>
-                </li>
+                
             </ul>
             </span>
         </div>

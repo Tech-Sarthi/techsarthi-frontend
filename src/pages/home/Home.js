@@ -1,19 +1,24 @@
 import React from "react";
-import "./home.scss";
-import top from "../../media/top.png"
-import iitrLogo from "../../media/iitr-logo.png"
-function Home() {
-  return (
-    <div className="App">
-      <img
-          className="top_img"
-          alt="no image"
-          src={top}
-        />
-        {/* <img src={iitrLogo} alt="iitr logo" className="iitrLogo"/>
-        <p className="iitr">INDIAN INSTITUTE OF TECHNOLOGY ROORKEE</p> */}
-    </div>
-  );
+
+import Carousell from "../../components/Carousel/Carousell";
+import About from "../../components/About/About";
+import Brochure from "../../components/Brochure/Brochure";
+import Process from "../../components/Process_flow/Process";
+import Areas from "../../components/Areas/Areas";
+
+
+
+
+function Home(){
+    return (
+        <>
+        <Carousell/>
+        <About/>
+        <Brochure/>
+        <Process/>
+        <Areas/>
+        </>
+    );
 }
 
 export default Home;

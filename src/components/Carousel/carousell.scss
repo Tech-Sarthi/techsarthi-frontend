@@ -1,0 +1,172 @@
+.box {
+    position: absolute;
+    width: 100vw;
+    height: 545px;
+    left: 0px;
+    top: 80.5px;
+    z-index: -1;
+    background: linear-gradient(99.47deg, #6750A4 0%, #65E7E7 98.36%);
+}
+
+.text {
+    display: flex;
+flex-direction: column;
+align-items: center;
+padding: 0px;
+
+position: absolute;
+width: 45.35vw;
+height: 290px;
+left: 27.325vw;
+top: 67px;
+}
+
+.logo_frame {
+    display: flex;
+flex-direction: row;
+align-items: flex-start;
+padding: 0px;
+
+position: absolute;
+width: 25.76vw;
+height: 120px;
+left: 9.79vw;
+top: 0px;
+
+
+/* Inside auto layout */
+
+flex: none;
+order: 0;
+flex-grow: 0;
+margin: 7px 0px;
+}
+
+.box_iitr {
+    position: absolute;
+width: 120px;
+height: 120px;
+left: 0px;
+top: 0px;
+
+
+/* Inside auto layout */
+
+flex: none;
+order: 0;
+flex-grow: 0;
+margin: 0px 12px;
+}
+
+.logo_iitr {
+    position: absolute;
+    width: 120px;
+    height: 120px;
+    left: 0px;
+    top: 0px;
+}
+
+.box_175 {
+    position: absolute;
+width: 16.6vw;
+height: 120px;
+left: 9.167vw;
+top: 0px;
+
+/* Inside auto layout */
+
+flex: none;
+order: 1;
+flex-grow: 0;
+margin: 0px 12px;
+}
+
+.logo_175 {
+    position: absolute;
+width: 16.6vw;
+height: 120px;
+left: 9.167vw;
+top: 0px;
+}
+.institute {
+    position: absolute;
+    width: 42vw;
+    height: 52px;
+    left: 1.67vw;
+    top: 127px;
+
+    font-family: 'Public Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 1.67vw;
+    line-height: 52px;
+    text-align: center;
+    color: #FFFFFF;
+
+    /* Inside auto layout */
+    flex: none;
+    order: 1;
+    flex-grow: 0;
+    margin: 7px 0px;
+}
+
+.name {
+    position: absolute;
+    width: 45vw;
+    height: 65px;
+    top: 186px;
+
+    font-family: 'Quantico';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 6vw;
+    line-height: 65px;
+    /* identical to box height, or 68% */
+
+    text-align: center;
+    color: #FFFFFF;
+
+    /* Inside auto layout */
+    flex: none;
+    order: 2;
+    flex-grow: 0;
+    margin: 7px 0px;
+}
+
+.tag-line {
+    position: absolute;
+    width: 45vw;
+    height: 32px;
+    left: 1.6vw;
+    top: 258px;
+
+    font-family: 'Public Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 1.1vw;
+    line-height: 32px;
+    /* identical to box height, or 200% */
+
+    text-align: center;
+
+    color: #FFFFFF;
+
+
+    /* Inside auto layout */
+
+    flex: none;
+    order: 3;
+    flex-grow: 0;
+    margin: 7px 0px;
+}
+
+.left_design{
+    position: absolute;
+left: 0px;
+top: 15px;
+}
+.right_design{
+    position: absolute;
+right:0px;
+top: 0px;
+}
