@@ -25,6 +25,10 @@ const Header=()=>{
                 <li>
                 <NavLink id="contact" to="/contact">
                     CONTACT US
+                    </NavLink>
+                    
+                <NavLink id="team" to="/team">
+                    OUR TEAM
                 </NavLink>
                 </li>
                 
