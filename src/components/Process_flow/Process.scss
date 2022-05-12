@@ -1,0 +1,142 @@
+.process_box{
+    position: absolute;
+    width: 77.5vw;
+    height: 560px;
+    left: 11.25vw;
+    top: 1463px;
+    //background-color: black;
+    z-index: -1;
+
+}
+
+.assessment{
+    position: absolute;
+    top: 61px;
+    left: 24.58vw;
+
+    font-family: 'Quantico';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 26px;
+    text-align: center;
+    
+    color: #677AB7;
+
+}
+.assessment_text{
+    position: absolute;
+    width: 23.33vw;
+    height: 125px;
+    left: 17.57vw;
+    top: 102px;
+    
+    font-family: 'Heebo';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    text-align: center;
+    
+    color: rgba(33, 33, 33, 0.8);
+}
+
+.solution{
+    position: absolute;
+    top: 74px;
+    left: 60.61vw;
+
+    font-family: 'Quantico';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 26px;
+    text-align: center;
+    
+    color: #66D6E0;
+
+}
+.solution_text{
+    position: absolute;
+    width: 216px;
+    height: 125px;
+    left: 57.55vw;
+    top: 116px;
+    
+    font-family: 'Heebo';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    text-align: center;
+    
+    color: rgba(33, 33, 33, 0.8);
+}
+
+.visit{
+    position: absolute;
+    top: 352px;
+    left: 7.2915vw;
+
+    font-family: 'Quantico';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 26px;
+    text-align: center;
+    
+    color: #6750A4;
+
+}
+.visit_text{
+    position: absolute;
+    width: 18.61vw;
+    height: 125px;
+    left: 0.347vw;
+    top: 390px;
+    
+    font-family: 'Heebo';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    text-align: center;
+    
+    color: rgba(33, 33, 33, 0.8);
+}
+
+.analysis{
+    position: absolute;
+    top: 352px;
+    left: 44.583vw;
+
+    font-family: 'Quantico';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 26px;
+    text-align: center;
+    
+    color: #66A4CA;
+
+}
+.analysis_text{
+    position: absolute;
+    width: 18.88vw;
+    height: 125px;
+    left: 38.583vw;
+    top: 398px;
+    
+    font-family: 'Heebo';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    text-align: center;
+    
+    color: rgba(33, 33, 33, 0.8);
+}
+.process_bar{
+    position: absolute;
+    top: 6px;
+}
