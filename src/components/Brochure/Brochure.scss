@@ -43,10 +43,10 @@
     padding: 12px 32px;
 
     position: static;
-    width: 218px;
+    width: 15.139vw;
     height: 44px;
-    left: calc(50% - 218px/2);
-    top: calc(50% - 44px/2);
+    left: calc(50% - 15.139vw/2);
+    top: calc(50% - 3.055vw/2);
 
     border: 1px solid #6750A4;
     border-radius: 4px;
@@ -104,13 +104,13 @@
     flex: none;
     order: 1;
     flex-grow: 0;
-    margin: 0px 4px;
+    margin: 0px 0.28vw;
 }
 
 .download_icon {
     position: static;
-    width: 18px;
-    height: 18px;
+    width: 1.25vw;
+    height: 1.25vw;
     left: 0px;
     top: 1px;
 
@@ -120,5 +120,5 @@
     flex: none;
     order: 0;
     flex-grow: 0;
-    margin: 0px 4px;
+    margin: 0px 0.28vw;
 }

@@ -17,7 +17,7 @@ function Process(){
             <div id="analysis" className= 'analysis'>ANALYSIS</div>
             <div id="analysis_text" className= 'analysis_text'>Analysis of data and in depth deliberation over issues and possible solutions</div>
 
-            <img id="process_bar" className= 'process_bar' src={process_bar}></img>
+            <img id="process_bar" className= 'process_bar' src={process_bar} alt= 'Process logo' />
         </div>
 
         );

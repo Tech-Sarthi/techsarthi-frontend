@@ -17,7 +17,7 @@
     font-family: 'Quantico';
     font-style: normal;
     font-weight: 700;
-    font-size: 18px;
+    font-size: 1.25vw;
     line-height: 26px;
     text-align: center;
     
@@ -49,7 +49,7 @@
     font-family: 'Quantico';
     font-style: normal;
     font-weight: 700;
-    font-size: 18px;
+    font-size: 1.25vw;
     line-height: 26px;
     text-align: center;
     
@@ -58,7 +58,7 @@
 }
 .solution_text{
     position: absolute;
-    width: 216px;
+    width: 15vw;
     height: 125px;
     left: 57.55vw;
     top: 116px;
@@ -81,7 +81,7 @@
     font-family: 'Quantico';
     font-style: normal;
     font-weight: 700;
-    font-size: 18px;
+    font-size: 1.25vw;
     line-height: 26px;
     text-align: center;
     
@@ -113,7 +113,7 @@
     font-family: 'Quantico';
     font-style: normal;
     font-weight: 700;
-    font-size: 18px;
+    font-size: 1.25vw;
     line-height: 26px;
     text-align: center;
     
@@ -139,4 +139,7 @@
 .process_bar{
     position: absolute;
     top: 6px;
+    left: 0vw;
+    width: 100%;
+    height: 100%;
 }
