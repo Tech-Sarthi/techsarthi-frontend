@@ -8,12 +8,10 @@ import Home from "./pages/home/Home";
 import Contact from "./pages/contact/Contact";
 import Projects from "./pages/projects/Projects";
 import About from "./components/About/About";
-import Admin from "./pages/admin/Admin";
 import { ToastContainer } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 import CompleteRegistration from "./pages/auth/CompleteRegistration";
 import ResetPassword from "./pages/auth/ResetPassword";
-import Team from "./components/Team/DisplayTeamMembers";
 
 require('typeface-quantico');
 require('typeface-heebo')
@@ -45,8 +43,6 @@ function App() {
           <Route exact path="/projects" element={<Projects />} />
           <Route exact path="/register/complete" element={<CompleteRegistration/>}/>
           <Route exact path="/forgot/password" element={<ResetPassword/>}/>
-          <Route exact path="/admin" element={<Admin/>}/>
-          <Route exact path="/team" element={<Team/>}/>
           {/* <Route path="*" element={<NotFound/>}/> */}
         </Routes>
       </Router>
