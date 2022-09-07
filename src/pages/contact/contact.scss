@@ -1,13 +1,11 @@
 .contact {
     margin-top: 100px;
-}
-.contact-header {
-    background-color: green;
-}
-.contact-list {
-    // background-color: beige;
     display: flex;
-    justify-content: space-between;
-    margin: 0 88px;
-    margin-top: 560px
-}
+    flex-direction: column;
+  }
+  
+.contact-header {
+    background-color: yellow;
+
+  }
+

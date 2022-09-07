@@ -1,11 +1,10 @@
-import React, { useState, useEffect } from "react";
+import React, { useState } from "react";
 import { signInWithEmailAndPassword } from "firebase/auth";
 import { auth } from "../../firebase";
 import { useNavigate } from "react-router-dom";
-import { Form, Input, Button } from "antd";
 import { toast } from "react-toastify";
 import { Link } from "react-router-dom";
-import "antd/dist/antd.css";
+import './auth.scss'
 
 const layout = {
   labelCol: {
@@ -52,40 +51,37 @@ const LoginForm = () => {
   };
 
   return (
-    <Form
-      {...layout}
-      name="nest-messages"
-      onFinish={handleSubmit}
-      validateMessages={validateMessages}
-    >
-      <Form.Item
-        name="email"
-        label="Email"
-        rules={[{ type: "email" }, { required: true }]}
-      >
-        <Input name="email" onChange={handleChange} value={values.email} />
-      </Form.Item>
+    <div classname="login-form">
+      <label classname="input">
+        EMAIL:
+        <input type="text"
+          name="email"
+          onChange={handleChange}
+          value={values.email}
+        />
+      </label>
 
-      <Form.Item
-        label="Password"
-        name="password"
-        rules={[{ required: true, message: "Please input your password!" }]}
-      >
-        <Input.Password
+      <label classname="input">
+        Password
+        <input type="text"
           name="password"
           onChange={handleChange}
           value={values.password}
         />
-      </Form.Item>
-      <Link to="/forgot/password" className="float-right text-danger">
+      </label>
+
+      <Link to="/forgot/password">
         Forgot Password?
       </Link>
-      <Form.Item wrapperCol={{ ...layout.wrapperCol, offset: 8 }}>
-        <Button type="primary" htmlType="submit">
-          Login
-        </Button>
-      </Form.Item>
-    </Form>
+      <button type="primary" onClick={handleSubmit}>
+        Login
+      </button>
+      <button type="primary" onClick={handleSubmit}>
+       <Link to="/register">Register</Link> 
+      </button>
+    </div >
+
+
   );
 };
 
@@ -93,7 +89,7 @@ const LoginForm = () => {
 
 const Login = () => {
   return (
-    <div>
+    <div className="login-page">
       <p>Login</p>
       <LoginForm />
     </div>

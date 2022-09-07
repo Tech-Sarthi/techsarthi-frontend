@@ -13,7 +13,7 @@ import { ToastContainer } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 import CompleteRegistration from "./pages/auth/CompleteRegistration";
 import ResetPassword from "./pages/auth/ResetPassword";
-import Team from "./components/Team/DisplayTeamMembers";
+import Team from "./pages/team/Team";
 
 require('typeface-quantico');
 require('typeface-heebo')
