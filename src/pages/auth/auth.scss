@@ -1,0 +1,22 @@
+.input{
+    display: flex;
+flex-direction: row;
+align-items: flex-start;
+padding: 16px;
+gap: 10px;
+
+width: 520px;
+height: 53px;
+color: black;
+/* White */
+
+background: blueviolet;
+border: 1px solid rgba(33, 33, 33, 0.54);
+border-radius: 4px;
+}
+
+
+.login-page{
+    font-size: xx-large;
+    color: black;
+}

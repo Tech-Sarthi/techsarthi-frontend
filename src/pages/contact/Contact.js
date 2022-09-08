@@ -1,4 +1,8 @@
 import React from "react";
+import "./contact.scss";
+import Form from "../../components/form/form";
+import Carousell from "../../components/Carousel/Carousell";
+import "./contact.scss";
 
 function Contact() {
   const profList = [

@@ -1,10 +1,10 @@
-import React,{useEffect,useState} from "react";
-import {useLocation} from "react-router-dom";
-import Search from "../../components/Search_box/Search"
-import {searchQuery} from "../../functions/projects";
+import React, { useCallback, useEffect, useState } from "react";
+import { useLocation } from "react-router-dom";
+import Search from "../../components/Search_box/Search";
+import { searchQuery } from "../../functions/projects";
 
-function Projects(){
-    const { search } = useLocation();
+// function Projects(){
+//     const { search } = useLocation();
 
 //     useEffect(()=>{
 //         let query=new URLSearchParams(search);

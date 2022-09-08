@@ -62,18 +62,20 @@ const RegisterForm = () => {
   };
 
   return (
-    <Form {...layout} name="register-form" onFinish={handleSubmit} validateMessages={validateMessages}>
-
-      <Form.Item name="email" label="Email" rules={[{ type: 'email' },{ required: true }]}>
-        <Input name="email" onChange={(e)=>{setEmail(e.target.value);}} value={email}/>
-      </Form.Item>
-
-      <Form.Item wrapperCol={{ ...layout.wrapperCol, offset: 8 }}>
-        <Button type="primary" htmlType="submit">
-          Register
-        </Button>
-      </Form.Item>
-    </Form>
+   
+    <form classname="login-form" validateMessages={validateMessages}>
+    <label classname="input">
+      EMAIL:
+      <input type="text"
+        name="email"
+        onChange={(e)=>{setEmail(e.target.value);}}
+        value={email}
+      />
+    </label>
+    <button type="primary" onClick={handleSubmit}>
+      Register
+      </button>
+      </form>
   );
 };
 
