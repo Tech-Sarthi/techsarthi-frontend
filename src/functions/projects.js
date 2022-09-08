@@ -10,11 +10,10 @@ export const searchQuery=async(query)=>{
     // }
     )
 }
-export const getProjects = () => async (dispatch) => {
-   return await axios.get(`${url_header}/projects`);
+export const getProjects = () => {
+   return  axios.get(`${url_header}/projects`);
   };
 
-  export const createProject = (newProject) => async (dispatch) => {
-
-      return await axios.post(`${url_header}/form`, newProject);
+  export const createProject = async(newProject) => {
+    return await axios.post(`${url_header}api/form`, newProject);
   };
