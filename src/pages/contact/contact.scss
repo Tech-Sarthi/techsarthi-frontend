@@ -1,16 +1,15 @@
 .contact {
   margin-top: 100px;
+  display: flex;
+  flex-direction: column;
 }
 .contact-header {
   background-color: green;
 }
-.contact-list {
-  //   background-color: beige;
-  display: flex;
-  justify-content: space-around;
-  gap: 20px;
-  flex-wrap: wrap;
-  height: auto;
-  margin: 0 88px;
-  margin-top: 560px;
+.contact-form {
+  margin: 0 162px;
+  margin-top: 460px;
+  padding: 0 auto;
+  background: #f8f7fb;
+  border-radius: 5px;
 }

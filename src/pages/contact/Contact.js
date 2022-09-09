@@ -1,6 +1,5 @@
 import React from "react";
-import "./contact.scss";
-import Form from "../../components/form/form";
+import Form from "../../components/form/form.js";
 import Carousell from "../../components/Carousel/Carousell";
 import "./contact.scss";
 
@@ -66,18 +65,8 @@ function Contact() {
       <div className="contact-header">
         <Carousell header="TECH SARTHI" name="CONTACT US" height="400px" />
       </div>
-      <div className="contact-list">
-        {profList.map((item, key) => (
-          <Card
-            src="/profilePic.jpg"
-            name={item.name}
-            dept={item.dept}
-            mail={item.mail}
-            phone={item.phone}
-            link={item.link}
-            tags={item.tags}
-          />
-        ))}
+      <div className="contact-form">
+        <Form />
       </div>
     </div>
   );
