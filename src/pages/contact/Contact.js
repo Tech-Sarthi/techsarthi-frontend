@@ -4,69 +4,31 @@ import Carousell from "../../components/Carousel/Carousell";
 import "./contact.scss";
 
 function Contact() {
-  const profList = [
-    {
-      name: "Prof.Amit Chodhary",
-      dept: "West Block, Mechanical and Industrial Department, IIT Roorkee",
-      mail: "amit.choudhary@me.iitr.ac.in",
-      phone: "01332-284696",
-      link: "www.iitr.ac.in",
-      tags: [],
-      src: "D:ProjectTechSarthi-WebsiteclientpublicprofilePic.jpg",
-    },
-    {
-      name: "Prof. Shushil Kumar",
-      dept: "Chemical Engineering Department, IIT Roorkee",
-      mail: "shushil@ch.iitr.ac.in",
-      phone: "01332-284944",
-      link: "www.iitr.ac.in",
-      tags: [],
-      src: "D:ProjectTechSarthi-WebsiteclientpublicprofilePic.jpg",
-    },
-    {
-      name: "Prof. Soma Rohtagi",
-      dept: "Biosciences and Bioengineering Department, IIT Roorkee",
-      mail: "soma.rohatgi@bt.iitr.ac.in",
-      phone: "01332-284831",
-      link: "www.iitr.ac.in",
-      tags: [],
-      src: "D:ProjectTechSarthi-WebsiteclientpublicprofilePic.jpg",
-    },
-    {
-      name: "Prof. Meenakshi Rawat",
-      dept: "Electronics and Communication Engineering Department, IIT Roorkee",
-      mail: "meenakshi.rawat@ece.iitr.ac.in",
-      phone: "01332-284808",
-      link: "www.iitr.ac.in",
-      tags: [],
-      src: "D:ProjectTechSarthi-WebsiteclientpublicprofilePic.jpg",
-    },
-    {
-      name: "Prof. Akshay Dvivedi",
-      dept: "West Block, Mechanical and Industrial Department, IIT Roorkee",
-      mail: "akshaydvivedi@me.iitr.ac.in",
-      phone: "01332-285428",
-      link: "www.iitr.ac.in",
-      tags: [],
-      src: "D:ProjectTechSarthi-WebsiteclientpublicprofilePic.jpg",
-    },
-    {
-      name: "Vishal",
-      dept: "SRIC Department, IIT Roorkee",
-      mail: "vishal.techsarthi@sric.iitr.ac.in",
-      phone: "01332-285378",
-      link: "www.iitr.ac.in",
-      tags: [],
-      src: "D:ProjectTechSarthi-WebsiteclientpublicprofilePic.jpg",
-    },
-  ];
   return (
     <div className="contact">
       <div className="contact-header">
         <Carousell header="TECH SARTHI" name="CONTACT US" height="400px" />
       </div>
+      <div className="contact-description">
+        <div id="title">Tell us about your Problem !</div>
+        <div id="description">
+          TechSarthi is an IIT Roorkee’s endeavour for supporting Industrial
+          Units in and around Roorkee. TechSarthi will focus on industries in
+          175 km radius of IIT Roorkee to help them adopt technically sound
+          solutions, gear up their growth and realize the objectives of going
+          “Local to Global”. This scheme will spot opportunities for new
+          products, services, markets, including assessing technology portfolio
+          and intellectual property rights. The objective of this initiative is
+          to make Roorkee region a highly efficient and effective industrial hub
+          promoting investments and reducing migrations.
+        </div>
+      </div>
       <div className="contact-form">
         <Form />
+      </div>
+      <div className="contact-footer">
+        <img className="logo-iitr" src="/logo-iitr.png" />
+        <img className="logo-175" src="/logo-175.png" />
       </div>
     </div>
   );
