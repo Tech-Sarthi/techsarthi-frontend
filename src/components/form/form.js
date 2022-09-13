@@ -43,107 +43,104 @@ const Form = () => {
 
   return (
     <form className="form" encType="multipart/form-data">
-      <label classname="label">
-        Name of Industry:
+      <div className="form-header">Contact form</div>
+      <div className="field" id="field-1">
+        <div>Name of Industry</div>
         <input
           type="text"
           name="name_of_industry"
           value={values.name_of_industry}
           onChange={handleChange}
         />
-      </label>
-      <label classname="label">
-        {" "}
-        website:
+      </div>
+      <div className="field">
+        <div> Official Website</div>
         <input
           type="text"
           name="website"
           value={values.website}
           onChange={handleChange}
         />
-      </label>
+      </div>
 
-      {/* <label classname="label">
-        {" "}
-        Logo of Industry:
-        <input
-          type="file"
-          accept=".png, .jpg, .jpeg"
-          name="industry_logo"
-          value={values.industry_logo}
-          onChange={handleImage}
-        />
-      </label> */}
-
-      <label classname="label">
-        {" "}
-        Type Of industry
+      <div className="field">
+        <div> Type Of Industry</div>
         <input
           type="text"
           name="type_of_industry"
           value={values.type_of_industry}
           onChange={handleChange}
         />
-      </label>
+      </div>
 
-      <label classname="label">
-        Name of Contact person
+      <div className="field">
+        <div>Name of contact person</div>
         <input
           type="text"
           name="name_of_contact_person"
           onChange={handleChange}
           value={values.name_of_contact_person}
         />
-      </label>
-      <label classname="label">
-        Designation of contact person
+      </div>
+      <div className="field">
+        <div>Designation of contact person</div>
         <input
           type="text"
           name="designation_of_contact_person"
           onChange={handleChange}
           value={values.designation_of_contact_person}
         />
-      </label>
+      </div>
 
-      <label classname="label">
-        Email of contact person
+      <div className="field">
+        <div>Email of contact person</div>
         <input
           type="text"
           name="email_of_contact_person"
           onChange={handleChange}
           value={values.email_of_contact_person}
         />
-      </label>
+      </div>
 
-      <label classname="label">
-        Problems:
-        <input
+      <div className="field">
+        <div>Technical problems faced by the industry</div>
+        <textarea
           type="text"
           name="problem_faced"
           onChange={handleChange}
           value={values.problem_faced}
         />
-      </label>
-      {/* <label classname="label">
-        Any document:
+      </div>
+      <div className="field">
+        <div>Other details, if any?</div>
+        <textarea
+          type="text"
+          name="other_details"
+          onChange={handleChange}
+          value={values.other_details}
+        />
+      </div>
+      {/* <div className="field">
+        <div>Upload file providing details of technical problem</div>
         <input
           type="file"
           accept=".png, .jpg, .jpeg, .pdf"
           name="problem_details"
           onChange={handleFile}
         />
-      </label> */}
+      </div> */}
 
-      <label classname="label">
-        Anything else?
+      {/* <div className="field">
+        <div> Logo of Industry</div>
         <input
-          type="text"
-          name="other_details"
-          onChange={handleChange}
-          value={values.other_details}
+          type="file"
+          accept=".png, .jpg, .jpeg"
+          name="industry_logo"
+          value={values.industry_logo}
+          onChange={handleFile}
         />
-      </label>
-      <button onClick={handleSubmit}>Submit</button>
+      </div> */}
+      <button onClick={handleSubmit}>SUBMIT FORM</button>
     </form>
   );
 };
