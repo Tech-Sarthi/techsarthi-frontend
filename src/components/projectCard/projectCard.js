@@ -19,13 +19,13 @@ export default function Card(props) {
         <div className="faculty-name">{props.faculty}</div>
         <div className="line"></div>
       </div>
-      <div className="tag-box">
+      {/* <div className="tag-box">
         {props.tags.map((item, key) => (
           <div className="tag" id={key}>
             {item}
           </div>
         ))}
-      </div>
+      </div> */}
       <button className="more-details">More Details</button>
     </div>
   );

@@ -6,30 +6,39 @@ const Form = () => {
   const initialState = {
     name_of_industry: "",
     website: "",
-    industry_logo: "",
     type_of_industry: " ",
     name_of_contact_person: "",
     designation_of_contact_person: "",
     email_of_contact_person: "",
     problem_faced: "",
-    problem_details: "",
     likeCount: 0,
     other_details: "",
   };
   const [values, setValues] = useState(initialState);
+  const [industry_logo, setIndustry_logo] = useState();
+  const [problem_details, setProblem_details] = useState();
   const handleChange = (e) => {
     setValues({ ...values, [e.target.name]: e.target.value });
     //console.log(e.target.name,"---------",e.target.value);
   };
-
-  const handleFile = (e) => {
-    setValues({ ...values, [e.target.name]: e.target.files[0] });
-  };
+  // const handleFile = (e) => {
+  //   setProblem_details(e.target.files[2]);
+  // };
+  // const handleImage = (e) => {
+  //   setIndustry_logo(e.target.files[1]);
+  // };
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    createProject(values);
-    console.log("submit");
+    let form_data = new FormData();
+    for (const value in values) {
+      console.log(value, values[value]);
+      form_data.append(value, values[value]);
+    }
+
+    // form_data.append('industry_logo', industry_logo);
+    // form_data.append('problem_details', problem_details);
+    createProject(values)
   };
 
   return (
@@ -54,7 +63,7 @@ const Form = () => {
         />
       </label>
 
-      <label classname="label">
+      {/* <label classname="label">
         {" "}
         Logo of Industry:
         <input
@@ -62,9 +71,9 @@ const Form = () => {
           accept=".png, .jpg, .jpeg"
           name="industry_logo"
           value={values.industry_logo}
-          onChange={handleFile}
+          onChange={handleImage}
         />
-      </label>
+      </label> */}
 
       <label classname="label">
         {" "}
@@ -115,16 +124,15 @@ const Form = () => {
           value={values.problem_faced}
         />
       </label>
-      <label classname="label">
+      {/* <label classname="label">
         Any document:
         <input
           type="file"
           accept=".png, .jpg, .jpeg, .pdf"
           name="problem_details"
           onChange={handleFile}
-          value={values.problem_details}
         />
-      </label>
+      </label> */}
 
       <label classname="label">
         Anything else?
