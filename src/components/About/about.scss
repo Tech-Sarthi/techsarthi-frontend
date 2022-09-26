@@ -1,76 +1,61 @@
 .about_container {
-    position: absolute;
-    width: 100vw;
-    height: 550px;
-    left: 0vw;
-    top: 625px;
+  height: 472px;
+  display: flex;
+  background: rgba(103, 80, 164, 0.08);
+}
+.logo {
+  align-self: center;
 }
 
 .about_heading {
-    position: absolute;
-    top: 115px;
-    left: 29vw;
-
-    text-align: center;
-    list-style: none;
-
+  padding-top: 100px;
+  list-style: none;
+  // background-color: aqua;
+  padding-left: 280px;
 }
 
 li {
-    padding-left: 10px;
-    display: inline-block;
+  padding-left: 10px;
+  display: inline-block;
 
-    font-family: 'Quantico';
-    font-style: normal;
-    font-weight: 700;
-    font-size: 40px;
-    line-height: 57px;
-    text-align: center;
-    letter-spacing: 0.02em;
+  font-family: "Quantico";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 57px;
+  text-align: center;
+  letter-spacing: 0.02em;
+  //   background-color: aqua;
 }
 
 .heading_1,
 .heading_3 {
-    color: #191919;
+  color: #191919;
 }
 
 .heading_2 {
-    color: #6750A4;
-}
-
-.about_line {
-    position: absolute;
-    width: 25vw;
-    height: 5px;
-    left: 37.5vw;
-    top: 170px;
-
-    background: #393939;
-    border-radius: 20px;
+  color: #6750a4;
 }
 
 .about_text {
-    position: absolute;
-    width: 69.44vw;
-    height: 192px;
-    left: 15.28vw;
-    top: 227px;
+  font-family: "Heebo";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 32px;
+  // background-color: green;
+  margin-top: 48px;
+  margin-right: 260px;
+  padding-left: 12px;
+  /* or 160% */
 
-    font-family: 'Heebo';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 1.38vw;
-    line-height: 32px;
-    /* or 160% */
-
-    display: flex;
-    align-items: center;
-    text-align: center;
-
-    color: rgba(33, 33, 33, 0.8);
+  display: flex;
+  align-items: center;
+  text-align: center;
+  color: #212121;
 }
 
 .about_bg {
-    background: rgba(103, 80, 164, 0.08);
-    opacity: 0.6;
+  background: rgba(103, 80, 164, 0.08);
+  opacity: 0.6;
 }

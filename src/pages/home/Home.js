@@ -8,18 +8,13 @@ import Areas from "../../components/Areas/Areas";
 
 function Home() {
   return (
-    <>
-      <Carousell
-        header="INDIAN INSTITUTE OF TECHNOLOGY ROORKEE"
-        name="TECH SARTHI"
-        details="A one stop solution for your technology needs!"
-        height="545px"
-      />
+    <div className="home-container">
+      <Carousell />
       <About />
-      <Brochure />
       <Process />
+      <Brochure />
       <Areas />
-    </>
+    </div>
   );
 }
 

@@ -1,18 +1,16 @@
 .team {
-  margin-top: 100px;
-}
-
-.team-header {
-  background-color: green;
-}
-
-.team-list {
   //   background-color: beige;
+  margin-bottom: 100px;
+  background-image: url("../../../public/team_bg.svg");
+  // background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-size: cover;
   display: flex;
   justify-content: space-around;
   gap: 20px;
   flex-wrap: wrap;
   height: auto;
-  margin: 0 88px;
-  margin-top: 560px;
+  padding: 0 88px;
+  // border: 2px solid black;
+  padding-top: 688px;
 }

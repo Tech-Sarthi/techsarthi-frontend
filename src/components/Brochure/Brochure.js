@@ -1,23 +1,31 @@
-import React from 'react-dom';
-import { Link } from "react-router-dom";
-import pdf from "../../media/Pdfs/brochure.pdf";
-import download_icon from "../../media/download.png";
-import './Brochure.scss'
-require('typeface-heebo');
+import React from "react-dom";
+import "./Brochure.scss";
 
 function Brochure() {
-    return (
-        <div id="brochure_box" className='brochure_box'>
-            <div id="brochure_heading" className='brochure_heading'> BROCHURE</div>
-            <div id="download_box" className='download_box'>
-                <Link to={pdf} target="_blank" download className='download_frame' style={{ textDecoration: 'none' }}>
-                    <div id="download_text" className="download_text">DOWNLOAD HERE</div>
-                    <img id="download_icon" className="download_icon" src={download_icon} />
-
-                </Link>
-            </div>
-
+  return (
+    <div id="brochure_box" className="brochure_box">
+      <div className="key-points">
+        <div className="item">
+          <img src="bulb.svg" />
+          <div> Innovative Solutions</div>
         </div>
-    );
+        <div className="item">
+          <img src="meter.svg" />
+          <div> Improve Efficiency</div>
+        </div>
+        <div className="item">
+          <img src="badge.svg" />
+          <div> National Recognition</div>
+        </div>
+      </div>
+      <div className="one-liner">
+        Want to get started with us? Register your problem now!
+      </div>
+      <div className="button-box">
+        <button id="button1">Talk to our team</button>
+        <button id="button2">Download Brochure</button>
+      </div>
+    </div>
+  );
 }
 export default Brochure;

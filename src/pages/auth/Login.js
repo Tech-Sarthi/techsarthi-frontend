@@ -4,7 +4,7 @@ import { auth } from "../../firebase";
 import { useNavigate } from "react-router-dom";
 import { toast } from "react-toastify";
 import { Link } from "react-router-dom";
-import './auth.scss'
+import "./auth.scss";
 
 const layout = {
   labelCol: {
@@ -51,37 +51,32 @@ const LoginForm = () => {
   };
 
   return (
-    <div classname="login-form">
-      <label classname="input">
-        EMAIL:
-        <input type="text"
-          name="email"
-          onChange={handleChange}
-          value={values.email}
-        />
-      </label>
-
-      <label classname="input">
-        Password
-        <input type="text"
-          name="password"
-          onChange={handleChange}
-          value={values.password}
-        />
-      </label>
-
-      <Link to="/forgot/password">
-        Forgot Password?
-      </Link>
+    <div className="login-form">
+      <div>TECH SARTHI</div>
+      <input
+        type="text"
+        name="email"
+        onChange={handleChange}
+        value={values.email}
+        placeholder="Email ID"
+      />
+      <input
+        type="text"
+        name="password"
+        onChange={handleChange}
+        value={values.password}
+        placeholder="Password"
+      />
+      <Link to="/forgot/password">Forgot Password?</Link>
       <button type="primary" onClick={handleSubmit}>
         Login
       </button>
-      <button type="primary" onClick={handleSubmit}>
-       <Link to="/register">Register</Link> 
-      </button>
-    </div >
-
-
+      <Link to="/register">
+        <button type="primary" onClick={handleSubmit}>
+          Register
+        </button>
+      </Link>
+    </div>
   );
 };
 

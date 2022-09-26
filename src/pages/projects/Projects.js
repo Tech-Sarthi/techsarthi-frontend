@@ -3,7 +3,6 @@ import React, { useCallback, useEffect, useState } from "react";
 // import Search from "../../components/Search_box/Search";
 // import { searchQuery } from "../../functions/projects";
 
-
 // function Projects(){
 //     const { search } = useLocation();
 
@@ -25,7 +24,7 @@ import React, { useCallback, useEffect, useState } from "react";
 
 // export default Projects;
 
-import { getAuth,onAuthStateChanged} from "firebase/auth";
+import { getAuth, onAuthStateChanged } from "firebase/auth";
 import "./projects.scss";
 import Carousell from "../../components/Carousel/Carousell";
 import List from "../../components/project/project_list/list";
@@ -36,22 +35,24 @@ function Projects() {
 
   const [currentUser, setCurrentUser] = useState(null);
 
-    useEffect(() => {
-        onAuthStateChanged(auth, (user) => {
-            if (user) {
-                setCurrentUser(user);
-            } else {
-                setCurrentUser(null);
-            }
-        });
-        // console.log(currentUser);
-    }, [currentUser]);
+  useEffect(() => {
+    onAuthStateChanged(auth, (user) => {
+      if (user) {
+        setCurrentUser(user);
+      } else {
+        setCurrentUser(null);
+      }
+    });
+    // console.log(currentUser);
+  }, [currentUser]);
 
   var user = auth.currentUser;
-  console.log(user)
+  console.log(user);
+
+  const [loggedin, setLogin] = useState(false);
   return (
-    <div className="project">
-      <div className="project-header">
+    <div className={loggedin ? "project-login" : "project-logout"}>
+      {/* <div className="project-header">
         <Carousell header="FOR STUDENTS" name="PROJECT LIST" height="400px" />
       </div>
       {user ? (
@@ -59,9 +60,9 @@ function Projects() {
       ) : (
         
         <List/>
-      )}
+      )} */}
+      <button className="project-login">Log In with Channel-i</button>
     </div>
-    
   );
 }
 

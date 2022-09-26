@@ -64,22 +64,17 @@ function Team() {
   return (
     //<DisplayTeamMembers/>
     <div className="team">
-      <div className="team-header">
-        <Carousell header="TECH SARTHI" name="OUR TEAM" height="400px" />
-      </div>
-      <div className="team-list">
-        {profList.map((item, key) => (
-          <Card
-            src="/profilePic.jpg"
-            name={item.name}
-            dept={item.dept}
-            mail={item.mail}
-            phone={item.phone}
-            link={item.link}
-            tags={item.tags}
-          />
-        ))}
-      </div>
+      {profList.map((item, key) => (
+        <Card
+          src="/profilePic.jpg"
+          name={item.name}
+          dept={item.dept}
+          mail={item.mail}
+          phone={item.phone}
+          link={item.link}
+          tags={item.tags}
+        />
+      ))}
     </div>
   );
 }

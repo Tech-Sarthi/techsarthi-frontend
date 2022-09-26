@@ -1,62 +1,32 @@
-.area_box{
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    padding: 0px;
-    gap: 24px;
-    
-    position: absolute;
-    width: 69.44vw;
-    height: 358px;
-    left: 11.25vw;
-    top: 2058px;
-    bottom: 300px;
-    //background-color: black;
-    z-index: -1;
+.area_box {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 0px;
+  gap: 24px;
+  padding-left: 178px;
+  padding-top: 120px;
+  padding-bottom: 148px;
 }
-.heading{
-    width: 16.041vw;
-    height: 37px;
-    
-    font-family: 'Nunito Sans';
-    font-style: normal;
-    font-weight: 700;
-    font-size: 1.944vw;
-    line-height: 37px;
-    /* identical to box height, or 132% */
-    
-    
-    color: #6750A4;
-    
-    
-    /* Inside auto layout */
-    
-    flex: none;
-    order: 0;
-    flex-grow: 0;
+.heading {
+  font-family: "Heebo";
+  font-weight: 700;
+  font-size: 28px;
+  line-height: 37px;
+  /* identical to box height, or 132% */
+
+  color: #6750a4;
 }
 .areas {
-    width: 100%;
-    height: 297px;
-    
-    font-family: 'Public Sans';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 1.25vw;
-    line-height: 33px;
-    /* or 183% */
-    
-    text-align: justify;
-    letter-spacing: 0.1px;
-    
-    /* dark-navy */
-    
-    color: #000C2D;
-    
-    
-    /* Inside auto layout */
-    
-    flex: none;
-    order: 1;
-    flex-grow: 0;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 33px;
+  /* or 183% */
+
+  text-align: justify;
+  letter-spacing: 0.1px;
+
+  /* dark-navy */
+
+  color: #000c2d;
 }

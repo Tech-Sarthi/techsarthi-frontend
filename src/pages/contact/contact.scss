@@ -1,52 +1,20 @@
 .contact {
-  margin-top: 100px;
+  margin-top: 200px;
+  padding-top: 520px;
   display: flex;
   flex-direction: column;
+  background-image: url("../../../public/contact_bg.svg");
+  align-self: center;
+  // border: 2px solid black;
+  // background-position: center;
+  // background-color: green;
+  background-position: -256px 0;
 }
-.contact-header {
-  background-color: green;
-}
-.contact-description {
-  margin: 0 220px;
-  margin-top: 500px;
-}
-#title {
-  font-family: "Quantico";
-  font-style: normal;
-  font-weight: 700;
-  font-size: 40px;
-  text-align: center;
-  letter-spacing: 0.02em;
-  text-decoration: underline;
-  text-underline-offset: 12px;
 
-  color: #191919;
-}
-#description {
-  margin-top: 56px;
-  font-family: "Heebo";
-  font-style: normal;
-  font-weight: 400;
-  font-size: 20px;
-  line-height: 32px;
-
-  display: flex;
-  align-items: center;
-  text-align: center;
-
-  color: rgba(33, 33, 33, 0.8);
-}
 .contact-form {
   margin: 0 162px;
-  margin-top: 132px;
   margin-bottom: 80px;
   padding: 0 auto;
   background: #f8f7fb;
   border-radius: 5px;
-}
-.contact-footer {
-  height: 236px;
-  background-color: #6750a4;
-  display: flex;
-  justify-content: space-around;
 }

@@ -10,7 +10,6 @@ export default function Card(props) {
         </div>
         <div className="profile-name">{props.name}</div>
         <div className="dept-name">{props.dept}</div>
-        <div className="line"></div>
       </div>
       <div className="contact-details">
         <div className="contact-details-item">
