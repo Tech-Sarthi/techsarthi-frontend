@@ -25,25 +25,27 @@ const Header = () => {
   };
 
   var user = auth.currentUser;
-  const [loggedIn, setLogin] = useContext(ThemeContext);
+  const { value1, value2 } = useContext(ThemeContext);
+  const [loggedIn, setLogin] = value1;
   const handleClick = useCallback(() => {
     if (loggedIn) {
       setLogin(false);
     } else setLogin(true);
   });
+  const [page, setPage] = value2;
   return (
     <div id="heade" className="heade">
       <div className="navList">
-        <a id="home" href="/">
+        <a id="home" href="/" className={`element${page == 0}`}>
           Tech Sarthi
         </a>
-        <a id="contact" href="/contact">
+        <a id="contact" href="/contact" className={`element${page == 1}`}>
           Contact Us
         </a>
-        <a id="team" href="/team">
+        <a id="team" href="/team" className={`element${page == 2}`}>
           Our Team
         </a>
-        <a id="projects" href="/projects">
+        <a id="projects" href="/projects" className={`element${page == 3}`}>
           For Students
         </a>
       </div>

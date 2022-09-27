@@ -1,7 +1,8 @@
-import React from "react";
+import React, { useContext } from "react";
 import "./team.scss";
 import Card from "../../components/profileCard/profileCard";
 import Carousell from "../../components/Carousel/Carousell";
+import { ThemeContext } from "../../App.js";
 //import DisplayTeamMembers from "./DisplayTeamMembers";
 
 function Team() {
@@ -61,6 +62,10 @@ function Team() {
       src: "D:ProjectTechSarthi-WebsiteclientpublicprofilePic.jpg",
     },
   ];
+  const { value1, value2 } = useContext(ThemeContext);
+  const [page, setPage] = value2;
+  setPage(2);
+  console.log(value1);
   return (
     //<DisplayTeamMembers/>
     <div className="team">

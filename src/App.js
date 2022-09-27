@@ -22,10 +22,16 @@ export const ThemeContext = React.createContext();
 
 function App() {
   const [loggedIn, setLogin] = useState(false);
+  const [page, setPage] = useState(-1);
   return (
     <>
       <Router>
-        <ThemeContext.Provider value={[loggedIn, setLogin]}>
+        <ThemeContext.Provider
+          value={{
+            value1: [loggedIn, setLogin],
+            value2: [page, setPage],
+          }}
+        >
           <ToastContainer
             position="top-right"
             autoClose={5000}

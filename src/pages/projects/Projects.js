@@ -48,8 +48,8 @@ function Projects() {
 
   var user = auth.currentUser;
   console.log(user);
-
-  const [loggedin, setLogin] = useContext(ThemeContext);
+  const { value1, value2 } = useContext(ThemeContext);
+  const [loggedin, setLogin] = value1;
   const handleLogin = useCallback(() => {
     if (loggedin) {
       setLogin(false);
@@ -57,6 +57,10 @@ function Projects() {
       setLogin(true);
     }
   });
+
+  const [page, setPage] = value2;
+  setPage(3);
+  console.log(value1);
   return (
     <div className={loggedin ? "project-login" : "project-logout"}>
       {/* <div className="project-header">
