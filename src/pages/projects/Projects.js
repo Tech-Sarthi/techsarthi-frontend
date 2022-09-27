@@ -1,4 +1,5 @@
-import React, { useCallback, useEffect, useState } from "react";
+import React, { useCallback, useEffect, useState, useContext } from "react";
+import { ThemeContext } from "../../App.js";
 // import { useLocation } from "react-router-dom";
 // import Search from "../../components/Search_box/Search";
 // import { searchQuery } from "../../functions/projects";
@@ -27,7 +28,6 @@ import React, { useCallback, useEffect, useState } from "react";
 import { getAuth, onAuthStateChanged } from "firebase/auth";
 import "./projects.scss";
 import Carousell from "../../components/Carousel/Carousell";
-import List from "../../components/project/project_list/list";
 import Update from "../../components/project/project_updates/updates";
 
 function Projects() {
@@ -49,7 +49,14 @@ function Projects() {
   var user = auth.currentUser;
   console.log(user);
 
-  const [loggedin, setLogin] = useState(false);
+  const [loggedin, setLogin] = useContext(ThemeContext);
+  const handleLogin = useCallback(() => {
+    if (loggedin) {
+      setLogin(false);
+    } else {
+      setLogin(true);
+    }
+  });
   return (
     <div className={loggedin ? "project-login" : "project-logout"}>
       {/* <div className="project-header">
@@ -61,7 +68,12 @@ function Projects() {
         
         <List/>
       )} */}
-      <button className="project-login">Log In with Channel-i</button>
+      {loggedin && <Update />}
+      {!loggedin && (
+        <button className="login-button" onClick={handleLogin}>
+          Log In with Channel-i
+        </button>
+      )}
     </div>
   );
 }

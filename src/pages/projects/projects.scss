@@ -5,8 +5,15 @@
   background-repeat: no-repeat;
   background-position: 140px 0;
 }
-
 .project-login {
+  margin-top: 80px;
+  background-image: url("../../../public/project_login_bg.svg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  min-height: 800px;
+}
+
+.login-button {
   margin-top: 380px;
   margin-left: 280px;
   background: #6750a4;

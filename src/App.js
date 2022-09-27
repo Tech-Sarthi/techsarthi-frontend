@@ -1,4 +1,4 @@
-import React, { Component } from "react";
+import React, { Component, useState } from "react";
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 
 import Login from "./pages/auth/Login";
@@ -18,41 +18,45 @@ import Footer from "./components/footer/footer";
 
 require("typeface-quantico");
 require("typeface-heebo");
+export const ThemeContext = React.createContext();
 
 function App() {
+  const [loggedIn, setLogin] = useState(false);
   return (
     <>
       <Router>
-        <ToastContainer
-          position="top-right"
-          autoClose={5000}
-          hideProgressBar={false}
-          newestOnTop={false}
-          closeOnClick
-          rtl={false}
-          pauseOnFocusLoss
-          draggable
-          pauseOnHover
-        />
-        <Header />
-        <Routes>
-          <Route exact path="/" element={<Home />} />
-          <Route exact path="/login" element={<Login />} />
-          <Route exact path="/register" element={<Register />} />
-          <Route exact path="/about" element={<About />} />
-          <Route exact path="/contact" element={<Contact />} />
-          <Route exact path="/projects" element={<Projects />} />
-          <Route
-            exact
-            path="/register/complete"
-            element={<CompleteRegistration />}
+        <ThemeContext.Provider value={[loggedIn, setLogin]}>
+          <ToastContainer
+            position="top-right"
+            autoClose={5000}
+            hideProgressBar={false}
+            newestOnTop={false}
+            closeOnClick
+            rtl={false}
+            pauseOnFocusLoss
+            draggable
+            pauseOnHover
           />
-          <Route exact path="/forgot/password" element={<ResetPassword />} />
-          <Route exact path="/admin" element={<Admin />} />
-          <Route exact path="/team" element={<Team />} />
-          {/* <Route path="*" element={<NotFound/>}/> */}
-        </Routes>
-        <Footer />
+          <Header />
+          <Routes>
+            <Route exact path="/" element={<Home />} />
+            <Route exact path="/login" element={<Login />} />
+            <Route exact path="/register" element={<Register />} />
+            <Route exact path="/about" element={<About />} />
+            <Route exact path="/contact" element={<Contact />} />
+            <Route exact path="/projects" element={<Projects />} />
+            <Route
+              exact
+              path="/register/complete"
+              element={<CompleteRegistration />}
+            />
+            <Route exact path="/forgot/password" element={<ResetPassword />} />
+            <Route exact path="/admin" element={<Admin />} />
+            <Route exact path="/team" element={<Team />} />
+            {/* <Route path="*" element={<NotFound/>}/> */}
+          </Routes>
+          <Footer />
+        </ThemeContext.Provider>
       </Router>
     </>
   );
