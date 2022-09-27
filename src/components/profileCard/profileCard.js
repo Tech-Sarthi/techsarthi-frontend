@@ -13,15 +13,15 @@ export default function Card(props) {
       </div>
       <div className="contact-details">
         <div className="contact-details-item">
-          <img src="/logo192.png" height={20} width={20} />
+          <img src="/mail_icon.svg" height={20} width={20} />
           <div className="mail">{props.mail}</div>
         </div>
         <div className="contact-details-item">
-          <img src="/logo192.png" height={20} width={20} />
+          <img src="/phone_icon.svg" height={20} width={20} />
           <div className="phone">{props.phone}</div>
         </div>
         <div className="contact-details-item">
-          <img src="/logo192.png" height={20} width={20} />
+          <img src="/link_icon.svg" height={20} width={20} />
           <div className="link">{props.link}</div>
         </div>
         <div className="line"></div>
