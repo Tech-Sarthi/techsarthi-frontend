@@ -6,6 +6,7 @@
   border: 1px solid rgba(0, 0, 0, 0.2);
   border-radius: 4px;
   margin-bottom: 20px;
+  background-color: white;
 }
 
 .card-description {
@@ -40,6 +41,7 @@
   font-weight: 400;
   font-size: 14px;
   line-height: 21px;
+  min-height: 100px;
 
   color: rgba(68, 68, 68, 0.8);
 }
