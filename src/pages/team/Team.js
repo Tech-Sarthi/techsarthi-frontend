@@ -8,13 +8,22 @@ import { ThemeContext } from "../../App.js";
 function Team() {
   const profList = [
     {
+      name: "Prof. Meenakshi Rawat",
+      dept: "Electronics and Communication Engineering Department, IIT Roorkee",
+      mail: "meenakshi.rawat@ece.iitr.ac.in",
+      phone: "01332-284808",
+      link: "www.iitr.ac.in",
+      tags: [],
+      src: require("../../media/Team/meenakshi.jpg"),
+    },
+    {
       name: "Prof.Amit Chodhary",
       dept: "West Block, Mechanical and Industrial Department, IIT Roorkee",
       mail: "amit.choudhary@me.iitr.ac.in",
       phone: "01332-284696",
       link: "www.iitr.ac.in",
       tags: [],
-      src: "D:ProjectTechSarthi-WebsiteclientpublicprofilePic.jpg",
+      src: require("../../media/Team/amit.jpg"),
     },
     {
       name: "Prof. Shushil Kumar",
@@ -23,7 +32,7 @@ function Team() {
       phone: "01332-284944",
       link: "www.iitr.ac.in",
       tags: [],
-      src: "D:ProjectTechSarthi-WebsiteclientpublicprofilePic.jpg",
+      src: require("../../media/Team/soma.jpg"),
     },
     {
       name: "Prof. Soma Rohtagi",
@@ -32,16 +41,7 @@ function Team() {
       phone: "01332-284831",
       link: "www.iitr.ac.in",
       tags: [],
-      src: "D:ProjectTechSarthi-WebsiteclientpublicprofilePic.jpg",
-    },
-    {
-      name: "Prof. Meenakshi Rawat",
-      dept: "Electronics and Communication Engineering Department, IIT Roorkee",
-      mail: "meenakshi.rawat@ece.iitr.ac.in",
-      phone: "01332-284808",
-      link: "www.iitr.ac.in",
-      tags: [],
-      src: "D:ProjectTechSarthi-WebsiteclientpublicprofilePic.jpg",
+      src: require("../../media/Team/soma.jpg"),
     },
     {
       name: "Prof. Akshay Dvivedi",
@@ -50,16 +50,16 @@ function Team() {
       phone: "01332-285428",
       link: "www.iitr.ac.in",
       tags: [],
-      src: "D:ProjectTechSarthi-WebsiteclientpublicprofilePic.jpg",
+      src: require("../../media/Team/akshay.jpg"),
     },
     {
       name: "Vishal",
-      dept: "SRIC Department, IIT Roorkee",
+      dept: "PROJECT FELLOW, MAIN BUILDING, IIT Roorkee",
       mail: "vishal.techsarthi@sric.iitr.ac.in",
       phone: "01332-285378",
       link: "www.iitr.ac.in",
       tags: [],
-      src: "D:ProjectTechSarthi-WebsiteclientpublicprofilePic.jpg",
+      src: require("../../media/Team/vishal.jpg"),
     },
   ];
   const { value1, value2 } = useContext(ThemeContext);
@@ -71,7 +71,7 @@ function Team() {
     <div className="team">
       {profList.map((item, key) => (
         <Card
-          src="/profilePic.jpg"
+          src={item.src}
           name={item.name}
           dept={item.dept}
           mail={item.mail}

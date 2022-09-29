@@ -21,10 +21,10 @@ const Form = () => {
     setValues({ ...values, [e.target.name]: e.target.value });
     //console.log(e.target.name,"---------",e.target.value);
   };
-  // const handleFile = (e) => {
-  //   setProblem_details(e.target.files[2]);
-  // };
-  // const handleImage = (e) => {
+  const handleFile = (e) => {
+    setProblem_details(e.target.files[2]);
+  };
+  //  const handleImage = (e) => {
   //   setIndustry_logo(e.target.files[1]);
   // };
 
@@ -37,12 +37,12 @@ const Form = () => {
     }
 
     // form_data.append('industry_logo', industry_logo);
-    // form_data.append('problem_details', problem_details);
+    form_data.append('problem_details', problem_details);
     createProject(values)
   };
 
   return (
-    <form className="form" encType="multipart/form-data">
+    <form className="form" encType="multipart/form-data" id ="form">
       <div className="form-header">Contact form</div>
       <div className="field" id="field-1">
         <div>Name of Industry</div>
@@ -120,7 +120,7 @@ const Form = () => {
           value={values.other_details}
         />
       </div>
-      {/* <div className="field">
+      <div className="field">
         <div>Upload file providing details of technical problem</div>
         <input
           type="file"
@@ -128,7 +128,7 @@ const Form = () => {
           name="problem_details"
           onChange={handleFile}
         />
-      </div> */}
+      </div>
 
       {/* <div className="field">
         <div> Logo of Industry</div>

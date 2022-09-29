@@ -15,6 +15,7 @@ import CompleteRegistration from "./pages/auth/CompleteRegistration";
 import ResetPassword from "./pages/auth/ResetPassword";
 import Team from "./pages/team/Team";
 import Footer from "./components/footer/footer";
+import ScrollToTop from './functions/scrolltoTop'
 
 require("typeface-quantico");
 require("typeface-heebo");
@@ -26,6 +27,7 @@ function App() {
   return (
     <>
       <Router>
+        <ScrollToTop/>
         <ThemeContext.Provider
           value={{
             value1: [loggedIn, setLogin],
