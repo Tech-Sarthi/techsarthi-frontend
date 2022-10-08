@@ -1,4 +1,4 @@
-import React, { Component, useState } from "react";
+import React, { Component, useState,useEffect } from "react";
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 
 import Login from "./pages/auth/Login";
@@ -22,7 +22,12 @@ require("typeface-heebo");
 export const ThemeContext = React.createContext();
 
 function App() {
-  const [loggedIn, setLogin] = useState(false);
+
+  const [loggedIn, setLogin] = useState([false]);
+
+useEffect(() => {
+  localStorage.setItem('loggedIn', JSON.stringify(loggedIn));
+}, [loggedIn]);
   const [page, setPage] = useState(-1);
   return (
     <>
