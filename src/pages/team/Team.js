@@ -32,7 +32,7 @@ function Team() {
       phone: "01332-284944",
       link: "www.iitr.ac.in",
       tags: [],
-      src: require("../../media/Team/soma.jpg"),
+      src: require("../../media/Team/sushil.jpg"),
     },
     {
       name: "Prof. Soma Rohtagi",
@@ -54,7 +54,7 @@ function Team() {
     },
     {
       name: "Vishal",
-      dept: "PROJECT FELLOW, MAIN BUILDING, IIT Roorkee",
+      dept: "Project fellow, Main building, IIT Roorkee",
       mail: "vishal.techsarthi@sric.iitr.ac.in",
       phone: "01332-285378",
       link: "www.iitr.ac.in",

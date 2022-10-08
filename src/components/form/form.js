@@ -22,27 +22,26 @@ const Form = () => {
     //console.log(e.target.name,"---------",e.target.value);
   };
   const handleFile = (e) => {
-    setProblem_details(e.target.files[2]);
+    setProblem_details(e.target.files[0]);
   };
-  //  const handleImage = (e) => {
-  //   setIndustry_logo(e.target.files[1]);
-  // };
+   const handleImage = (e) => {
+    setIndustry_logo(e.target.files[0]);
+  };
 
   const handleSubmit = (e) => {
     e.preventDefault();
     let form_data = new FormData();
     for (const value in values) {
-      console.log(value, values[value]);
       form_data.append(value, values[value]);
     }
 
-    // form_data.append('industry_logo', industry_logo);
+    form_data.append('industry_logo', industry_logo);
     form_data.append('problem_details', problem_details);
-    createProject(values)
+    createProject(form_data)
   };
 
   return (
-    <form className="form" encType="multipart/form-data" id ="form">
+    <form className="form" encType="multipart/form-data" id="form">
       <div className="form-header">Contact form</div>
       <div className="field" id="field-1">
         <div>Name of Industry</div>
@@ -129,17 +128,16 @@ const Form = () => {
           onChange={handleFile}
         />
       </div>
-
-      {/* <div className="field">
+      <div className="field">
         <div> Logo of Industry</div>
         <input
           type="file"
           accept=".png, .jpg, .jpeg"
           name="industry_logo"
           value={values.industry_logo}
-          onChange={handleFile}
+          onChange={handleImage}
         />
-      </div> */}
+      </div>
       <button onClick={handleSubmit}>SUBMIT FORM</button>
     </form>
   );

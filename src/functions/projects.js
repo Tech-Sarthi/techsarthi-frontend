@@ -15,5 +15,9 @@ export const getProjects = () => {
   };
 
   export const createProject = async(newProject) => {
-    return await axios.post(`${url_header}api/form`, newProject);
+    return await axios.post(`${url_header}api/form`, newProject, {
+  headers: {
+    "Content-Type": "multipart/form-data",
+  },
+});
   };
