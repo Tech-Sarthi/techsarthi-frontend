@@ -35,3 +35,74 @@
 
   color: rgba(33, 33, 33, 0.8);
 }
+.carousel-inner{
+  position: absolute;
+width: 1120px;
+height: 536px;
+left: 400px;
+top: 0px;
+
+background: #C4C4C4;
+border-radius: 4px;
+}
+.carousel slide{
+  position: absolute;
+width: 1440px;
+height: 625px;
+left: 115px;
+top: 31px;
+
+background: linear-gradient(99.47deg, #6750A4 0%, #65E7E7 98.36%);
+}
+.text{display: flex;
+  align-items: center;
+  text-align: center;
+  
+color: rgba(33, 33, 33, 0.8);
+}
+#solution{
+  position: absolute;
+width: 689px;
+height: 40px;
+left: 600px;
+top: 650px;
+
+font-family: 'Quantico';
+font-style: normal;
+font-weight: 600;
+font-size: 27px;
+line-height: 40px;
+/* identical to box height */
+letter-spacing: 0.02em;
+
+color: #191919;
+
+}
+#problem{
+  position: absolute;
+width: 984px;
+height: 32px;
+left: 655px;
+top: 760px;
+
+font-family: 'Heebo';
+font-style: normal;
+font-weight: 400;
+font-size: 20px;
+line-height: 32px;
+/* identical to box height, or 160% */
+
+display: flex;
+align-items: center;
+text-align: center;
+
+color: rgba(33, 33, 33, 0.8);
+
+}
+.carousel-indicators{
+  position: absolute;
+width: 66px;
+height: 4px;
+left: 687px;
+top: 696px;
+}
