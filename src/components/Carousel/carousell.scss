@@ -1,8 +1,12 @@
 .carousel {
+  margin: 0 auto;
   margin-top: 80px;
-  height: 820px;
   // background-color: aquamarine;
-  padding-top: 48px;
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  padding-bottom: 30px;
+  align-items: center;
 }
 .banner {
   display: flex;
@@ -21,7 +25,6 @@
   line-height: 40px;
   text-align: center;
   letter-spacing: 0.02em;
-  margin-top: 68px;
   color: #191919;
 }
 .carousel h3 {
@@ -34,4 +37,48 @@
   text-align: center;
 
   color: rgba(33, 33, 33, 0.8);
+}
+.carousel-inner {
+  width: 1120px;
+  height: 536px;
+
+  background: #c4c4c4;
+  border-radius: 4px;
+}
+.carousel slide {
+  width: 1440px;
+  height: 625px;
+
+  background: linear-gradient(99.47deg, #6750a4 0%, #65e7e7 98.36%);
+}
+.text {
+  color: rgba(33, 33, 33, 0.8);
+}
+#solution {
+  font-family: "Quantico";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 27px;
+  line-height: 40px;
+  /* identical to box height */
+  letter-spacing: 0.02em;
+
+  color: #191919;
+}
+#problem {
+  font-family: "Heebo";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 32px;
+
+  color: rgba(33, 33, 33, 0.8);
+}
+#carouselIndicators ol {
+  margin: 40px auto;
+}
+.carousel-indicators {
+  position: absolute;
+  width: 66px;
+  height: 4px;
 }

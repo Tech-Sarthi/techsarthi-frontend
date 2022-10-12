@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { createProject } from "../../functions/projects";
 import "./form.scss";
-
+import { toast } from "react-toastify";
 const Form = () => {
   const initialState = {
     name_of_industry: "",
@@ -24,7 +24,7 @@ const Form = () => {
   const handleFile = (e) => {
     setProblem_details(e.target.files[0]);
   };
-   const handleImage = (e) => {
+  const handleImage = (e) => {
     setIndustry_logo(e.target.files[0]);
   };
 
@@ -35,9 +35,11 @@ const Form = () => {
       form_data.append(value, values[value]);
     }
 
-    form_data.append('industry_logo', industry_logo);
-    form_data.append('problem_details', problem_details);
-    createProject(form_data)
+    form_data.append("industry_logo", industry_logo);
+    form_data.append("problem_details", problem_details);
+    createProject(values);
+    toast.success("Form Submitted");
+    window.location.reload();
   };
 
   return (

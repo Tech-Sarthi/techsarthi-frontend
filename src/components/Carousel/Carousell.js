@@ -11,11 +11,52 @@ require("typeface-quantico");
 function Carousell(props) {
   return (
     <div id="box" className="carousel">
-      <div className="banner">
-        <img src="/banner.svg" />
+      <div id="carouselIndicators" class="carousel slide" data-ride="carousel">
+        <ol class="carousel-indicators">
+          <li
+            data-target="#carouselExampleIndicators"
+            data-slide-to="0"
+            class="active"
+          ></li>
+          <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+          <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+        </ol>
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img class="d-block w-100" src="/banner.svg" alt="First slide" />
+          </div>
+          <div class="carousel-item">
+            <img class="d-block w-100" src="/banner.svg" alt="Second slide" />
+          </div>
+          <div class="carousel-item">
+            <img class="d-block w-100" src="/banner.svg" alt="Third slide" />
+          </div>
+        </div>
+        <a
+          class="carousel-control-prev"
+          href="#carouselIndicators"
+          role="button"
+          data-slide="prev"
+        >
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="sr-only">Previous</span>
+        </a>
+        <a
+          class="carousel-control-next"
+          href="#carouselIndicators"
+          role="button"
+          data-slide="next"
+        >
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="sr-only">Next</span>
+        </a>
       </div>
-      <h2>A one stop solution for all your technology needs</h2>
-      <h3>Stuck with problem ? Need a quality solution blah blah blah......</h3>
+      <div className="text">
+        <h2 id="solution">A one stop solution for all your technology needs</h2>
+        <h3 id="problem">
+          Stuck with problem ? Need a quality solution blah blah blah......
+        </h3>
+      </div>
     </div>
   );
 }
