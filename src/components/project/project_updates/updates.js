@@ -22,8 +22,11 @@ function Update() {
           <Card
             src="/project.png"
             name={item.name_of_industry}
-            description={item.problem_faced}
+            title={item.problem_faced}
             faculty="Vishal"
+            description={item.other_details}
+            code={item.code}
+            outcome={item.expected_outcome}
           />
         ))}
     </div>
