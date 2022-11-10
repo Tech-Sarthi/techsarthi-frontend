@@ -4,6 +4,7 @@ import { UploadOutlined } from "@ant-design/icons";
 import React from "react";
 import axios from "axios";
 import { toast } from "react-toastify";
+import {url_header} from "./../../../const"
 
 const layout = {
   labelCol: {
@@ -44,7 +45,7 @@ const TeamMemberForm = () => {
     data.append("img", values.img.file.originFileObj);
     console.log(data);
     axios
-      .post("http://localhost:8000/api/teamMember", data, {
+      .post(`${url_header}/api/teamMember`, data, {
         headers: {
           "Content-Type": "multipart/form-data",
         },

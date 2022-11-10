@@ -3,13 +3,12 @@ import axios from "axios";
 
 import "./updates.scss";
 import Card from "../../projectCard/projectCard";
+import {url_header} from "../../../const"
 
 function Update() {
   const [projects, setProjects] = useState();
-  const url = "http://localhost:8000/";
-
   useEffect(() => {
-    axios.get(`${url}api/projects`).then((response) => {
+    axios.get(`${url_header}api/projects`).then((response) => {
       setProjects(response.data);
     });
   }, []);
