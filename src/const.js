@@ -1,2 +1,2 @@
-export const url_header="https://techsarthi-api.herokuapp.com/";
-export const register_redirect_url='https://techsarthi-api.herokuapp.com/register/complete'
+export const url_header = "http://localhost:8000/";
+export const register_redirect_url = "http://localhost:8000/register/complete";

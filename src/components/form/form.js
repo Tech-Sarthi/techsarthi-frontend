@@ -121,7 +121,7 @@ const Form = () => {
           value={values.other_details}
         />
       </div>
-      <div className="field">
+      <div className="submit-file">
         <div>Upload file providing details of technical problem</div>
         <input
           type="file"
@@ -130,7 +130,7 @@ const Form = () => {
           onChange={handleFile}
         />
       </div>
-      <div className="field">
+      <div className="submit-file">
         <div> Logo of Industry</div>
         <input
           type="file"
