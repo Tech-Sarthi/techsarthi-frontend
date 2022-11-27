@@ -19,6 +19,7 @@ function Update() {
       {projects &&
         projects.map((item) => (
           <Card
+          
             src="/project.png"
             name={item.name_of_industry}
             title={item.problem_faced}
