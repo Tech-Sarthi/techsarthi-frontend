@@ -26,10 +26,10 @@ function Carousell(props) {
             <img class="d-block w-100" src="/banner.svg" alt="First slide" />
           </div>
           <div class="carousel-item">
-            <img class="d-block w-100" src="/banner.svg" alt="Second slide" />
+            <img class="d-block w-100" src="/photo1.jpg" alt="Second slide" />
           </div>
           <div class="carousel-item">
-            <img class="d-block w-100" src="/banner.svg" alt="Third slide" />
+            <img class="d-block w-100" src="/photo2.jpg" alt="Third slide" />
           </div>
         </div>
         <a
