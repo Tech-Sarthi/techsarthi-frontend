@@ -26,13 +26,29 @@ const Header = () => {
 
   var user = auth.currentUser;
   const { value1, value2 } = useContext(ThemeContext);
-  const [loggedIn, setLogin] = value1;
+  const [page, setPage] = value2;
+  const temp = localStorage.getItem("loggedIn");
+  // console.log("VALUES", value.value1, value.value2);
+  const [loggedIn, setLogin] = useState(
+    temp == null ? false : temp == "false" ? false : true
+  );
   const handleClick = useCallback(() => {
+    // console.log("CHECKK", "Initial loggedIn", loggedIn);
     if (loggedIn) {
       setLogin(false);
     } else setLogin(true);
+    // console.log("CHECKK", "handleClick works", loggedIn);
   });
-  const [page, setPage] = value2;
+  useEffect(() => {
+    localStorage.setItem("loggedIn", JSON.stringify(loggedIn));
+    // console.log(
+    //   "CHECKK",
+    //   "localvalue",
+    //   localStorage.getItem("loggedIn"),
+    //   loggedIn
+    // );
+  }, [loggedIn, temp]);
+
   return (
     <div id="heade" className="heade">
       <div className="navList">

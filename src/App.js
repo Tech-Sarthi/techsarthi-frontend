@@ -1,4 +1,4 @@
-import React, { Component, useState,useEffect } from "react";
+import React, { Component, useState, useEffect } from "react";
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 
 import Login from "./pages/auth/Login";
@@ -15,24 +15,26 @@ import CompleteRegistration from "./pages/auth/CompleteRegistration";
 import ResetPassword from "./pages/auth/ResetPassword";
 import Team from "./pages/team/Team";
 import Footer from "./components/footer/footer";
-import ScrollToTop from './functions/scrolltoTop'
+import ScrollToTop from "./functions/scrolltoTop";
 
 require("typeface-quantico");
 require("typeface-heebo");
 export const ThemeContext = React.createContext();
 
 function App() {
-
-  const [loggedIn, setLogin] = useState([false]);
-
-useEffect(() => {
-  localStorage.setItem('loggedIn', JSON.stringify(loggedIn));
-}, [loggedIn]);
+  const temp = localStorage.getItem("loggedIn");
+  // console.log("CHECKK", "TEMP:", temp);
+  const [loggedIn, setLogin] = useState(
+    temp == null ? false : temp == "false" ? false : true
+  );
+  useEffect(() => {
+    localStorage.setItem("loggedIn", JSON.stringify(loggedIn));
+  }, [loggedIn, temp]);
   const [page, setPage] = useState(-1);
   return (
     <>
       <Router>
-        <ScrollToTop/>
+        <ScrollToTop />
         <ThemeContext.Provider
           value={{
             value1: [loggedIn, setLogin],

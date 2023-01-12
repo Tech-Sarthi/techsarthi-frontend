@@ -10,9 +10,16 @@
   // background-color: green;
   background-position: -256px 0;
 }
+@media only screen and (max-width: 1200px) {
+  .contact {
+    // background-size: fill;
+    // background-repeat: no-repeat;
+    background-position: -400px 0;
+  }
+}
 
 .contact-form {
-  margin: 0 162px;
+  margin: 0 10%;
   margin-bottom: 80px;
   padding: 0 auto;
   background: #f8f7fb;

@@ -4,7 +4,6 @@
   background-image: url("../../../public/team_bg.svg");
   // background-attachment: fixed;
   background-repeat: no-repeat;
-  background-size: cover;
   display: flex;
   justify-content: space-around;
   gap: 20px;
@@ -12,5 +11,15 @@
   height: auto;
   padding: 0 88px;
   // border: 2px solid black;
-  padding-top: 688px;
+  padding-top: 50%;
+}
+@media only screen and (max-width: 1200px) {
+  .team {
+    background-size: contain;
+  }
+}
+@media only screen and (min-width: 1200px) {
+  .team {
+    background-size: cover;
+  }
 }

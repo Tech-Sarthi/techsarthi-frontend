@@ -49,20 +49,32 @@ function Projects() {
   var user = auth.currentUser;
   console.log(user);
   const { value1, value2 } = useContext(ThemeContext);
-  const [loggedin, setLogin] = value1;
+  const temp = localStorage.getItem("loggedIn");
+  // console.log("VALUES", value.value1, value.value2);
+  const [loggedIn, setLogin] = useState(
+    temp == null ? false : temp == "false" ? false : true
+  );
   const handleLogin = useCallback(() => {
-    if (loggedin) {
+    console.log("CHECKK", "Initial loggedIn", loggedIn);
+    if (loggedIn) {
       setLogin(false);
-    } else {
-      setLogin(true);
-    }
+    } else setLogin(true);
+    console.log("CHECKK", "handleClick works", loggedIn);
   });
-
+  useEffect(() => {
+    localStorage.setItem("loggedIn", JSON.stringify(loggedIn));
+    console.log(
+      "CHECKK",
+      "localvalue",
+      localStorage.getItem("loggedIn"),
+      loggedIn
+    );
+  }, [loggedIn]);
   const [page, setPage] = value2;
   setPage(3);
-  console.log(value1);
+  console.log("CHECKK", "re-render occured");
   return (
-    <div className={loggedin ? "project-login" : "project-logout"}>
+    <div className={loggedIn ? "project-login" : "project-logout"}>
       {/* <div className="project-header">
         <Carousell header="FOR STUDENTS" name="PROJECT LIST" height="400px" />
       </div>
@@ -72,8 +84,8 @@ function Projects() {
         
         <List/>
       )} */}
-      {loggedin && <Update />}
-      {!loggedin && (
+      {loggedIn && <Update />}
+      {!loggedIn && (
         <button className="login-button" onClick={handleLogin}>
           Log In with Channel-i
         </button>
