@@ -8,7 +8,7 @@ const DisplayTeamMembers = () => {
   const [teamMembers, setTeamMembers] = useState([]);
   const [imgData,setImgData]=useState([]);
   useEffect(() => {
-    fetch(`${url_header}/api/teamMember`)
+    fetch(`${url_header}api/teamMember`)
       .then((res) => res.json())
       .then((json) => {
         console.log(json.teamMembers);

@@ -18,7 +18,10 @@ export default function Card(props) {
               <img src="/like.jpg" />
             </div>
           </div>
-          <div className="project-card-description">{props.title}</div>
+          <div className="project-card-description">
+            <h6>{props.title}</h6>
+            {props.description}
+            </div>
           <div className="faculty-in-charge">Faculty Incharge</div>
           <div className="faculty-name">{props.faculty}</div>
           <div className="line"></div>
@@ -34,7 +37,13 @@ export default function Card(props) {
           More Details
         </button>
       </div>
-      <Popup trigger={buttonPopup} setTrigger={setbuttonPopup} />
+      <Popup trigger={buttonPopup} setTrigger={setbuttonPopup} 
+      name={props.name}
+      title={props.title}
+      faculty="Vishal"
+      description={props.description}
+      outcome={props.outcome}
+      />
     </>
   );
 }

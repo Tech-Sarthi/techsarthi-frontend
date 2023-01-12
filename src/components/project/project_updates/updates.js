@@ -17,7 +17,7 @@ function Update() {
   return (
     <div className="project-list">
       {projects &&
-        projects.map(
+       projects.map(
           (item) =>
             item.verified && (
               <Card
@@ -26,7 +26,6 @@ function Update() {
                 title={item.problem_faced}
                 faculty="Vishal"
                 description={item.other_details}
-                code={item.code}
                 outcome={item.expected_outcome}
               />
             )
