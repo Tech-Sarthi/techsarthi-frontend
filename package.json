@@ -59,6 +59,5 @@
   "devDependencies": {
     "netlify-cli": "^2.37.0",
     "sass": "^1.51.0"
-  },
-  "proxy": "http://localhost:8000"
+  }
 }
