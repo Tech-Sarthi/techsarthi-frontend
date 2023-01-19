@@ -11,11 +11,11 @@ export default function Footer() {
         <div className="contact-us">Contact Us</div>
         <div>
           <img src="call_icon.svg" />
-          <div>+05644 223322</div>
+          <div>01332-285378</div>
         </div>
         <div>
           <img src="mail.svg" />
-          <div>techsarthi@iitr.ac.in</div>
+          <div>175years.techsarthi@iitr.ac.in</div>
         </div>
       </div>
     </div>

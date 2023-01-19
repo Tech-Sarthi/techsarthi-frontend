@@ -54,7 +54,7 @@ function Team() {
     },
     {
       name: "Vishal",
-      dept: "Project fellow, Main building, IIT Roorkee",
+      dept: "Project Officer, Main building, IIT Roorkee",
       mail: "vishal.techsarthi@sric.iitr.ac.in",
       phone: "01332-285378",
       link: "www.iitr.ac.in",
