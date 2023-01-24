@@ -1,21 +1,16 @@
 .contact {
+  // border: 2px solid green;
   margin-top: 140px;
-  padding-top: 520px;
+  padding-top: 35%;
   display: flex;
   flex-direction: column;
   background-image: url("../../../public/contact_bg.svg");
-  align-self: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+  // align-self: center;
   // border: 2px solid black;
   // background-position: center;
   // background-color: green;
-  background-position: -256px 0;
-}
-@media only screen and (max-width: 1200px) {
-  .contact {
-    // background-size: fill;
-    // background-repeat: no-repeat;
-    background-position: -400px 0;
-  }
 }
 
 .contact-form {

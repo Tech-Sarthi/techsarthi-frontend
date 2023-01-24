@@ -1,10 +1,11 @@
 .project-list {
-  // background-color: beige;
+  background-color: beige;
   display: flex;
   justify-content: space-around;
-  gap: 20px;
+  // gap: 20px;
   flex-wrap: wrap;
+  gap: 5%;
   height: auto;
-  margin: 0 88px;
-  padding-top: 38%;
+  margin: 0 5%;
+  margin-top: 38%;
 }
