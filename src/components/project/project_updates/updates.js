@@ -21,10 +21,10 @@ function Update() {
           (item) =>
             item.verified && (
               <Card
-                src="/project.png"
+                src={item.image_src}
                 name={item.name_of_industry}
                 title={item.problem_faced}
-                faculty="Vishal"
+                faculty="TA Techsarthi"
                 description={item.other_details}
                 outcome={item.expected_outcome}
               />
