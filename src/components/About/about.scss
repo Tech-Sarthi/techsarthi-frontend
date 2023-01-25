@@ -1,24 +1,34 @@
 .about_container {
   height: 472px;
   display: flex;
-  background: rgba(103, 80, 164, 0.08);
+  flex-direction: column;
+  background: url("../../../public/iitr_logo.svg");
+  background-size: contain;
+  background-repeat: no-repeat;
+  // border: 2px solid blue;
 }
-.logo {
-  align-self: center;
-}
+// .logo {
+//   align-self: center;
+// }
 
 .about_heading {
-  padding-top: 100px;
-  list-style: none;
-  // background-color: aqua;
-  padding-left: 180px;
-
+  padding-top: 80px;
+  background: rgba(103, 80, 164, 0.08);
+  // border: 2px solid aqua;
+  // padding-left: 180px;
+}
+.heading_box {
+  display: flex;
+  flex-direction: row;
+  margin: auto;
+  width: fit-content;
+  gap: 10px;
+  // border: 2px solid black;
 }
 
-li {
-  padding-left: 10px;
-  display: inline-block;
-
+.heading_1,
+.heading_2,
+.heading_3 {
   font-family: "Quantico";
   font-style: normal;
   font-weight: 700;
@@ -26,7 +36,7 @@ li {
   line-height: 57px;
   text-align: center;
   letter-spacing: 0.02em;
-  //   background-color: aqua;
+  // border: 1px solid red;
 }
 
 .heading_1,
@@ -37,26 +47,28 @@ li {
 .heading_2 {
   color: #6750a4;
 }
-
+.about_text_container {
+  background: rgba(103, 80, 164, 0.08);
+  // border: 2px solid red;
+  padding-top: 48px;
+  height: 100%;
+}
 .about_text {
+  display: flex;
+
+  align-items: center;
+  text-align: center;
+
   font-family: "Heebo";
   font-style: normal;
   font-weight: 400;
   font-size: 16px;
   line-height: 32px;
   // background-color: green;
-  margin-top: 48px;
-  margin-right: 260px;
-  padding-left: 12px;
+  margin-right: auto;
+  margin-left: auto;
   /* or 160% */
-
-  display: flex;
-  align-items: center;
-  text-align: center;
+  // border: 2px solid green;
   color: #212121;
-}
-
-.about_bg {
-  background: rgba(103, 80, 164, 0.08);
-  opacity: 0.6;
+  max-width: 45%;
 }
