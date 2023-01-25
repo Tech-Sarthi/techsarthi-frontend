@@ -21,7 +21,6 @@ function Carousell(props) {
           <li data-target="#carouselExampleIndicators" data-slide-to="5"></li>
           <li data-target="#carouselExampleIndicators" data-slide-to="6"></li>
           <li data-target="#carouselExampleIndicators" data-slide-to="7"></li>
-          <li data-target="#carouselExampleIndicators" data-slide-to="8"></li>
         </ol>
         <div class="carousel-inner">
           <div class="carousel-item active">
@@ -38,9 +37,6 @@ function Carousell(props) {
           </div>
           <div class="carousel-item">
             <img class="d-block w-100" src="/photo2.jpg" alt="Fifth slide" />
-          </div>
-          <div class="carousel-item">
-            <img class="d-block w-100" src="/photo10.jpg" alt="sixth slide" />
           </div>
           <div class="carousel-item">
             <img class="d-block w-100" src="/photo7.jpg" alt="Seventh slide" />
