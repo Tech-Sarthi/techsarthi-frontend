@@ -19,6 +19,9 @@ function Carousell(props) {
           <li data-target="#carouselExampleIndicators" data-slide-to="3"></li>
           <li data-target="#carouselExampleIndicators" data-slide-to="4"></li>
           <li data-target="#carouselExampleIndicators" data-slide-to="5"></li>
+          <li data-target="#carouselExampleIndicators" data-slide-to="6"></li>
+          <li data-target="#carouselExampleIndicators" data-slide-to="7"></li>
+          <li data-target="#carouselExampleIndicators" data-slide-to="8"></li>
         </ol>
         <div class="carousel-inner">
           <div class="carousel-item active">
@@ -38,6 +41,15 @@ function Carousell(props) {
           </div>
           <div class="carousel-item">
             <img class="d-block w-100" src="/photo6.jpg" alt="Sixth slide" />
+          </div>
+          <div class="carousel-item">
+            <img class="d-block w-100" src="/photo7.jpg" alt="Seventh slide" />
+          </div>
+          <div class="carousel-item">
+            <img class="d-block w-100" src="/photo8.jpg" alt="Eighth slide" />
+          </div>
+          <div class="carousel-item">
+            <img class="d-block w-100" src="/photo9.jpg" alt="ninth slide" />
           </div>
         </div>
         <a
@@ -62,7 +74,7 @@ function Carousell(props) {
       <div className="text">
         <h2 id="solution">A one stop solution for all your technology needs</h2>
         <h3 id="problem">
-          Stuck with problem ? Need a quality solution blah blah blah......
+          Stuck with problem ? Need a quality solution, we are here for you.
         </h3>
       </div>
     </div>
