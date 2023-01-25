@@ -60,9 +60,10 @@ function Carousell(props) {
         </a>
       </div>
       <div className="text">
-        <h2 id="solution">A one stop solution for all your technology needs</h2>
-        <h3 id="problem">
-          Stuck with problem ? Need a quality solution blah blah blah......
+        <h2 id="problem">Stuck with a problem?</h2>
+        <h3 id="solution">
+          TechSarthi comes to the rescue. One stop solution for all your
+          technology needs!
         </h3>
       </div>
     </div>
