@@ -6,8 +6,8 @@ require("typeface-quantico");
 
 function Carousell(props) {
   return (
-    <div id="box" className="carousel">
-      <div id="carouselIndicators" class="carousel slide" data-ride="carousel">
+    <div id="box" className="carousel" >
+      <div id="carouselIndicators" class="carousel slide" data-ride="carousel" data-interval="700">
         <ol class="carousel-indicators">
           <li
             data-target="#carouselExampleIndicators"
@@ -21,6 +21,9 @@ function Carousell(props) {
           <li data-target="#carouselExampleIndicators" data-slide-to="5"></li>
           <li data-target="#carouselExampleIndicators" data-slide-to="6"></li>
           <li data-target="#carouselExampleIndicators" data-slide-to="7"></li>
+          <li data-target="#carouselExampleIndicators" data-slide-to="8"></li>
+          <li data-target="#carouselExampleIndicators" data-slide-to="9"></li>
+          <li data-target="#carouselExampleIndicators" data-slide-to="10"></li>
         </ol>
         <div class="carousel-inner">
           <div class="carousel-item active">
@@ -30,8 +33,17 @@ function Carousell(props) {
             <img class="d-block w-100" src="/photo1.jpg" alt="Second slide" />
           </div>
           <div class="carousel-item">
+            <img class="d-block w-100" src="/photo10.jpg" alt="ninth slide" />
+          </div>   
+          <div class="carousel-item">
             <img class="d-block w-100" src="/photo5.jpg" alt="third slide" />
           </div>
+          <div class="carousel-item">
+            <img class="d-block w-100" src="/photo11.jpg" alt="ninth slide" />
+          </div>   
+          <div class="carousel-item">
+            <img class="d-block w-100" src="/photo12.jpg" alt="ninth slide" />
+          </div>   
           <div class="carousel-item">
             <img class="d-block w-100" src="/photo4.jpg" alt="Fourth slide" />
           </div>
