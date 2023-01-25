@@ -21,28 +21,23 @@ export default function Card(props) {
           <div className="project-card-description">
             <h6>{props.title}</h6>
             {props.description}
-            </div>
+          </div>
           <div className="faculty-in-charge">Faculty Incharge</div>
           <div className="faculty-name">{props.faculty}</div>
-          <div className="line"></div>
+          {/* <div className="line"></div> */}
         </div>
-        {/* <div className="tag-box">
-        {props.tags.map((item, key) => (
-          <div className="tag" id={key}>
-            {item}
-          </div>
-        ))}
-      </div> */}
         <button className="more-details" onClick={() => setbuttonPopup(true)}>
           More Details
         </button>
       </div>
-      <Popup trigger={buttonPopup} setTrigger={setbuttonPopup} 
-      name={props.name}
-      title={props.title}
-      faculty="Vishal"
-      description={props.description}
-      outcome={props.outcome}
+      <Popup
+        trigger={buttonPopup}
+        setTrigger={setbuttonPopup}
+        name={props.name}
+        title={props.title}
+        faculty="Vishal"
+        description={props.description}
+        outcome={props.outcome}
       />
     </>
   );

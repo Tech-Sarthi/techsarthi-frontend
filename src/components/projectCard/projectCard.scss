@@ -7,6 +7,7 @@
   border-radius: 4px;
   margin-bottom: 20px;
   background-color: white;
+  // border: 2px solid red;
 }
 
 .card-description {
@@ -72,7 +73,7 @@
 .line {
   border: 0.4px solid rgba(0, 0, 0, 0.3);
   width: calc(100% - 24px);
-  margin: 16px auto;
+  margin: 2px auto;
 }
 .tag-box {
   display: flex;
@@ -100,7 +101,10 @@
   border-radius: 20px;
 }
 .more-details {
-  margin: 12px;
+  margin-top: auto;
+  margin-bottom: 20px;
+  margin-left: 12px;
+  margin-right: 12px;
   height: 40px;
   min-height: 40px;
   max-height: 40px;
