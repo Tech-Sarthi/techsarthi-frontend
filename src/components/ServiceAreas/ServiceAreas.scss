@@ -1,12 +1,13 @@
 .area_box {
   display: flex;
   flex-direction: column;
-  align-items: flex-start;
-  padding: 0px;
-  gap: 24px;
-  padding-left: 178px;
-  padding-top: 120px;
-  padding-bottom: 148px;
+  background-color: rgba(186, 222, 217, 255);
+  // align-items: flex-start;
+  // padding: 0px;
+  // gap: 24px;
+  // padding-left: 178px;
+  // padding-top: 120px;
+  // padding-bottom: 148px;
 }
 .heading {
   font-family: "Heebo";
@@ -29,4 +30,10 @@
   /* dark-navy */
 
   color: #000c2d;
+}
+
+.areas_pic {
+  width: 50%;
+  margin: 20px auto;
+  border-radius: 100px;
 }

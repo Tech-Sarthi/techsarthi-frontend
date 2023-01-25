@@ -4,10 +4,10 @@ import "./ServiceAreas.scss";
 function ServiceAreas() {
   return (
     <div id="area_box" className="area_box">
-      <div id="heading" className="heading">
+      {/* <div id="heading" className="heading">
         Service Areas
-      </div>
-      <div id="areas" className="areas">
+      </div> */}
+      {/* <div id="areas" className="areas">
         Automation
         <br />
         Advanced Manufacturing
@@ -25,7 +25,8 @@ function ServiceAreas() {
         Pollution Control
         <br />
         Waste Management
-      </div>
+      </div> */}
+      <img src="/service_areas.jpg" className="areas_pic" />
     </div>
   );
 }
