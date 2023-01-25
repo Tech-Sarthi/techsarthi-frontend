@@ -1,9 +1,11 @@
 .areas_covered {
   background: rgba(103, 80, 164, 0.08);
   display: flex;
+  height: 630px;
 }
 .areas_image {
   object-fit: contain;
-  margin: 20px auto;
+  max-width: 800px;
+  margin: auto;
   //   border: 2px solid green;
 }
