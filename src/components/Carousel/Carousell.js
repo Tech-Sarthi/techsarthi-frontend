@@ -51,6 +51,8 @@ function Carousell(props) {
           <div class="carousel-item">
             <img class="d-block w-100" src="/photo9.jpg" alt="ninth slide" />
           </div>
+       
+          
         </div>
         <a
           class="carousel-control-prev"
