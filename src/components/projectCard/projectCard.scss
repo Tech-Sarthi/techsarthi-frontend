@@ -32,8 +32,16 @@
 .project-like img {
   height: 20px;
 }
+.project-pic {
+  display: flex;
+  // background: rgba(103, 80, 164, 0.08);
+}
 .project-pic img {
+  object-fit: cover;
   width: 100%;
+  max-height: 200px;
+  margin: 0 auto;
+  // border: 2px solid green;
 }
 .project-card-description {
   // background-color: #6750a4;
