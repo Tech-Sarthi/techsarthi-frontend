@@ -7,7 +7,7 @@ require("typeface-quantico");
 function Carousell(props) {
   return (
     <div id="box" className="carousel" >
-      <div id="carouselIndicators" class="carousel slide" data-ride="carousel" data-interval="700">
+      <div id="carouselIndicators" class="carousel slide" data-ride="carousel" data-interval="1800">
         <ol class="carousel-indicators">
           <li
             data-target="#carouselExampleIndicators"
