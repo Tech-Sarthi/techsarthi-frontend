@@ -1,3 +1,9 @@
+# About TechSarthi (FrontEnd)
+
+Welcome to the repository for TechSarthi, an app that connects students to real-time projects. Trusted by over 60 industries to upload projects and utilized by more than 4,000 students to access them, TechSarthi is a vital link between academia and industry.
+
+This repository contains the frontend code developed using ReactJS. Feel free to explore, contribute, or use this as a reference for your own projects.
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
